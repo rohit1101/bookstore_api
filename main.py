@@ -18,4 +18,8 @@ async def get_all_books():
 async def get_book_by_id(book_id:int=0):
   return f'The book ID is {book_id}'
 
+@app.post('/api/v1/books/')
+async def add_book():
+  return f'Book added'
+
 
