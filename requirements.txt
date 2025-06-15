@@ -6,6 +6,7 @@ uvicorn[standard]==0.30.0
 SQLAlchemy==2.0.30
 asyncpg==0.29.0
 databases[postgresql]==0.9.0
+sqlmodel==0.0.24
 
 # Pydantic v2 for validation & settings
 pydantic==2.7.1

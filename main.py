@@ -15,9 +15,9 @@ app.add_middleware(
 )
 
 class BookItem(BaseModel):
-  id: int
+  # id: str
   title: str
-  author: list[str]
+  author: str
   published_date: str
   price: float
 
