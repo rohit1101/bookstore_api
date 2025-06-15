@@ -1,6 +1,15 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
 
 app=FastAPI()
+
+class BookItem(BaseModel):
+  id: int
+  title: str
+  author: list[str]
+  published_date: str
+  price: float
+
 
 @app.get('/')
 async def home():
